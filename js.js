@@ -59,3 +59,16 @@ console.log(
 
 console.log(Cane.greet());
 console.log(Cane, Cavallo, Cavallo2);
+
+const petArrey = [];
+const getPetData = function (event) {
+  event.preventDefault();
+
+  const UserPet2Name2 = document.getElementById("petName").value;
+  const UserOwnerName2 = document.getElementById("ownerName").value;
+  const UserSpecies2 = document.getElementById("species").value;
+  const UserBreed2 = document.getElementById("breed").value;
+  const UserPet2 = new Pet(UserPet2Name2, UserOwnerName2, UserSpecies2, UserBreed2);
+  console.log(UserPet2);
+  petArrey.push(UserPet2);
+};
